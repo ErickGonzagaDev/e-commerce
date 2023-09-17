@@ -1,0 +1,32 @@
+.header {
+    
+    z-index: 1000;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #333333;
+    color: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.493);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+
+
+    &_Container {
+        max-width: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_Interativo {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            
+        }
+    }
+}

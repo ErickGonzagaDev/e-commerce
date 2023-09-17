@@ -1,0 +1,147 @@
+{
+    "celulares": [
+        {
+            "id": 1,
+            "nome": "Samsung Galaxy S22",
+            "preco": 2999.99,
+            "ficha_tecnica": {
+                "tela": "6.2 polegadas AMOLED",
+                "processador": "Snapdragon 888",
+                "armazenamento": "128GB",
+                "camera": "50MP + 12MP + 10MP",
+                "sistema_operacional": "Android 12"
+            },
+            "imagem_real": "https://example.com/samsung-galaxy-s22.jpg"
+        },
+        {
+            "id": 2,
+            "nome": "iPhone 13 Pro",
+            "preco": 3299.0,
+            "ficha_tecnica": {
+                "tela": "6.1 polegadas Super Retina XDR",
+                "processador": "A15 Bionic",
+                "armazenamento": "256GB",
+                "camera": "12MP + 12MP + 12MP",
+                "sistema_operacional": "iOS 15"
+            },
+            "imagem_real": "https://example.com/iphone-13-pro.jpg"
+        },
+        {
+            "id": 3,
+            "nome": "Google Pixel 6",
+            "preco": 799.99,
+            "ficha_tecnica": {
+                "tela": "6.4 polegadas OLED",
+                "processador": "Google Tensor",
+                "armazenamento": "128GB",
+                "camera": "50MP + 12MP",
+                "sistema_operacional": "Android 12"
+            },
+            "imagem_real": "https://example.com/google-pixel-6.jpg"
+        },
+        {
+            "id": 4,
+            "nome": "OnePlus 9 Pro",
+            "preco": 899.0,
+            "ficha_tecnica": {
+                "tela": "6.7 polegadas Fluid AMOLED",
+                "processador": "Snapdragon 888",
+                "armazenamento": "256GB",
+                "camera": "48MP + 50MP + 8MP",
+                "sistema_operacional": "OxygenOS 11"
+            },
+            "imagem_real": "https://example.com/oneplus-9-pro.jpg"
+        },
+        {
+            "id": 5,
+            "nome": "Xiaomi Mi 11",
+            "preco": 699.99,
+            "ficha_tecnica": {
+                "tela": "6.81 polegadas AMOLED",
+                "processador": "Snapdragon 888",
+                "armazenamento": "128GB",
+                "camera": "108MP + 13MP + 5MP",
+                "sistema_operacional": "MIUI 12"
+            },
+            "imagem_real": "https://example.com/xiaomi-mi-11.jpg"
+        },
+        {
+            "id": 6,
+            "nome": "Sony Xperia 1 III",
+            "preco": 1099.0,
+            "ficha_tecnica": {
+                "tela": "6.5 polegadas 4K HDR OLED",
+                "processador": "Snapdragon 888",
+                "armazenamento": "256GB",
+                "camera": "12MP + 12MP + 12MP",
+                "sistema_operacional": "Android 11"
+            },
+            "imagem_real": "https://example.com/sony-xperia-1-iii.jpg"
+        },
+        {
+            "id": 7,
+            "nome": "Huawei P50 Pro",
+            "preco": 899.99,
+            "ficha_tecnica": {
+                "tela": "6.6 polegadas OLED",
+                "processador": "Kirin 9000",
+                "armazenamento": "256GB",
+                "camera": "50MP + 40MP + 13MP",
+                "sistema_operacional": "HarmonyOS 2"
+            },
+            "imagem_real": "https://example.com/huawei-p50-pro.jpg"
+        },
+        {
+            "id": 8,
+            "nome": "LG G8 ThinQ",
+            "preco": 499.0,
+            "ficha_tecnica": {
+                "tela": "6.1 polegadas OLED",
+                "processador": "Snapdragon 855",
+                "armazenamento": "128GB",
+                "camera": "12MP + 16MP",
+                "sistema_operacional": "Android 10"
+            },
+            "imagem_real": "https://example.com/lg-g8-thinq.jpg"
+        },
+        {
+            "id": 9,
+            "nome": "Nokia 9 PureView",
+            "preco": 399.99,
+            "ficha_tecnica": {
+                "tela": "5.99 polegadas pOLED",
+                "processador": "Snapdragon 845",
+                "armazenamento": "128GB",
+                "camera": "12MP (x5)",
+                "sistema_operacional": "Android 10"
+            },
+            "imagem_real": "https://example.com/nokia-9-pureview.jpg"
+        },
+        {
+            "id": 10,
+            "nome": "Motorola Moto G7",
+            "preco": 199.0,
+            "ficha_tecnica": {
+                "tela": "6.2 polegadas IPS LCD",
+                "processador": "Snapdragon 632",
+                "armazenamento": "64GB",
+                "camera": "12MP + 5MP",
+                "sistema_operacional": "Android 9"
+            },
+            "imagem_real": "https://example.com/motorola-moto-g7.jpg"
+        },
+        {
+            "id": 11,
+            "nome": "Asus ROG Phone 5",
+            "preco": 999.0,
+            "ficha_tecnica": {
+                "tela": "6.78 polegadas AMOLED",
+                "processador": "Snapdragon 888",
+                "armazenamento": "256GB",
+                "camera": "64MP + 13MP + 5MP",
+                "sistema_operacional": "ROG UI"
+            },
+            "imagem_real": "https://example.com/asus-rog-phone-5.jpg"
+        }
+    ]
+}

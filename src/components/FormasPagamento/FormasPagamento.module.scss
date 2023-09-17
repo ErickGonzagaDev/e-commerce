@@ -1,0 +1,43 @@
+.container{
+  max-width: 80%;
+  width: 100%;
+  display: flex;  
+  flex-direction: column;
+  row-gap: 30px;
+  margin: 30px auto;
+  margin-bottom: 90px;
+
+  font-family: "Roboto";
+
+  &_Header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    
+    &::before{
+      content: "";
+      position: absolute;
+      max-width: 40%;
+      width: 100%;
+      height: 4px;
+      bottom: 20px;
+      border-radius:5px ;
+      background-color: #333333;
+
+    }
+  }
+
+
+  &_Cartoes{
+    display: flex;
+    justify-content: space-around;
+
+    img{
+      max-width: 100px;
+      width: 100%;
+    }
+  }
+}

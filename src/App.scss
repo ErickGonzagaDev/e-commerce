@@ -1,0 +1,12 @@
+body,html {
+    background-color: #fafafa;
+    &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #333333;  
+    }
+
+    &::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.596);
+    }
+}

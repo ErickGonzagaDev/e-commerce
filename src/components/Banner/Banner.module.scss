@@ -1,0 +1,19 @@
+.banner {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 68.400px );
+    background: url("assets/imagem3.jpg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+
+    div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        bottom: 30px;
+    }
+}

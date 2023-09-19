@@ -1,0 +1,37 @@
+.card {
+    width: 100%;
+    display: flex;
+    height: calc((100vh - 68.800px)/3);
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto";
+    font-size: 50px;
+    text-decoration: none;
+
+    &:hover {
+        .card_Imagem {
+            width: 0%;
+        }
+
+        div {
+            background-color: rgb(102, 102, 102);
+        }
+    }
+
+    div {
+        width: 100%;
+        background-color: #333333;
+        transition: 1s ease-in-out;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &_Botao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

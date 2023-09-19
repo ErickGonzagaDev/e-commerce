@@ -1,147 +1,281 @@
 {
-    "celulares": [
-        {
-            "id": 1,
-            "nome": "Samsung Galaxy S22",
-            "preco": 2999.99,
-            "ficha_tecnica": {
-                "tela": "6.2 polegadas AMOLED",
-                "processador": "Snapdragon 888",
-                "armazenamento": "128GB",
-                "camera": "50MP + 12MP + 10MP",
-                "sistema_operacional": "Android 12"
-            },
-            "imagem_real": "https://example.com/samsung-galaxy-s22.jpg"
-        },
-        {
-            "id": 2,
-            "nome": "iPhone 13 Pro",
-            "preco": 3299.0,
-            "ficha_tecnica": {
-                "tela": "6.1 polegadas Super Retina XDR",
-                "processador": "A15 Bionic",
-                "armazenamento": "256GB",
-                "camera": "12MP + 12MP + 12MP",
-                "sistema_operacional": "iOS 15"
-            },
-            "imagem_real": "https://example.com/iphone-13-pro.jpg"
-        },
-        {
-            "id": 3,
-            "nome": "Google Pixel 6",
-            "preco": 799.99,
-            "ficha_tecnica": {
-                "tela": "6.4 polegadas OLED",
-                "processador": "Google Tensor",
-                "armazenamento": "128GB",
-                "camera": "50MP + 12MP",
-                "sistema_operacional": "Android 12"
-            },
-            "imagem_real": "https://example.com/google-pixel-6.jpg"
-        },
-        {
-            "id": 4,
-            "nome": "OnePlus 9 Pro",
-            "preco": 899.0,
-            "ficha_tecnica": {
-                "tela": "6.7 polegadas Fluid AMOLED",
-                "processador": "Snapdragon 888",
-                "armazenamento": "256GB",
-                "camera": "48MP + 50MP + 8MP",
-                "sistema_operacional": "OxygenOS 11"
-            },
-            "imagem_real": "https://example.com/oneplus-9-pro.jpg"
-        },
-        {
-            "id": 5,
-            "nome": "Xiaomi Mi 11",
-            "preco": 699.99,
-            "ficha_tecnica": {
-                "tela": "6.81 polegadas AMOLED",
-                "processador": "Snapdragon 888",
-                "armazenamento": "128GB",
-                "camera": "108MP + 13MP + 5MP",
-                "sistema_operacional": "MIUI 12"
-            },
-            "imagem_real": "https://example.com/xiaomi-mi-11.jpg"
-        },
-        {
-            "id": 6,
-            "nome": "Sony Xperia 1 III",
-            "preco": 1099.0,
-            "ficha_tecnica": {
-                "tela": "6.5 polegadas 4K HDR OLED",
-                "processador": "Snapdragon 888",
-                "armazenamento": "256GB",
-                "camera": "12MP + 12MP + 12MP",
-                "sistema_operacional": "Android 11"
-            },
-            "imagem_real": "https://example.com/sony-xperia-1-iii.jpg"
-        },
-        {
-            "id": 7,
-            "nome": "Huawei P50 Pro",
-            "preco": 899.99,
-            "ficha_tecnica": {
-                "tela": "6.6 polegadas OLED",
-                "processador": "Kirin 9000",
-                "armazenamento": "256GB",
-                "camera": "50MP + 40MP + 13MP",
-                "sistema_operacional": "HarmonyOS 2"
-            },
-            "imagem_real": "https://example.com/huawei-p50-pro.jpg"
-        },
-        {
-            "id": 8,
-            "nome": "LG G8 ThinQ",
-            "preco": 499.0,
-            "ficha_tecnica": {
-                "tela": "6.1 polegadas OLED",
-                "processador": "Snapdragon 855",
-                "armazenamento": "128GB",
-                "camera": "12MP + 16MP",
-                "sistema_operacional": "Android 10"
-            },
-            "imagem_real": "https://example.com/lg-g8-thinq.jpg"
-        },
-        {
-            "id": 9,
-            "nome": "Nokia 9 PureView",
-            "preco": 399.99,
-            "ficha_tecnica": {
-                "tela": "5.99 polegadas pOLED",
-                "processador": "Snapdragon 845",
-                "armazenamento": "128GB",
-                "camera": "12MP (x5)",
-                "sistema_operacional": "Android 10"
-            },
-            "imagem_real": "https://example.com/nokia-9-pureview.jpg"
-        },
-        {
-            "id": 10,
-            "nome": "Motorola Moto G7",
-            "preco": 199.0,
-            "ficha_tecnica": {
-                "tela": "6.2 polegadas IPS LCD",
-                "processador": "Snapdragon 632",
-                "armazenamento": "64GB",
-                "camera": "12MP + 5MP",
-                "sistema_operacional": "Android 9"
-            },
-            "imagem_real": "https://example.com/motorola-moto-g7.jpg"
-        },
-        {
-            "id": 11,
-            "nome": "Asus ROG Phone 5",
-            "preco": 999.0,
-            "ficha_tecnica": {
-                "tela": "6.78 polegadas AMOLED",
-                "processador": "Snapdragon 888",
-                "armazenamento": "256GB",
-                "camera": "64MP + 13MP + 5MP",
-                "sistema_operacional": "ROG UI"
-            },
-            "imagem_real": "https://example.com/asus-rog-phone-5.jpg"
+
+            "Xiaomi": [
+                {
+                    "modelo": "Xiaomi Mi 11",
+                    "imagem":"https://i.ebayimg.com/images/g/dlgAAOSwlc1f8~7i/s-l1600.png",
+                    "ano_lancamento": 2021,
+                    "tela": "6.81 polegadas",
+                    "camera_principal": "108 MP",
+                    "memoria_ram": "8 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Xiaomi Redmi Note 10",
+                    "imagem":"https://carrefourbr.vtexassets.com/arquivos/ids/94302480-1280-auto?v=638086759001530000&width=1280&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "6.43 polegadas",
+                    "camera_principal": "48 MP",
+                    "memoria_ram": "4 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "Xiaomi Mi 10",
+                    "imagem":"https://images-americanas.b2w.io/produtos/7462244644/imagens/smartphone-xiaomi-redmi-note-10-5g-tela-6-5-128gb-4gb-ram-camera-tripla-selfie-8mp-azul/7462244648_1_large.jpg",
+                    "ano_lancamento": 2020,
+                    "tela": "6.67 polegadas",
+                    "camera_principal": "108 MP",
+                    "memoria_ram": "8 GB",
+                    "armazenamento_interno": "256 GB"
+                },
+                {
+                    "modelo": "Xiaomi Poco X3",
+                    "imagem":"https://m.media-amazon.com/images/I/61iJ6RQS-eL.__AC_SX300_SY300_QL70_ML2_.jpg",
+                    "ano_lancamento": 2020,
+                    "tela": "6.67 polegadas",
+                    "camera_principal": "64 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Xiaomi Redmi 9",
+                    "imagem":"https://m.media-amazon.com/images/I/61TIUx9dzhL.__AC_SX300_SY300_QL70_ML2_.jpg",
+                    "ano_lancamento": 2020,
+                    "tela": "6.53 polegadas",
+                    "camera_principal": "13 MP",
+                    "memoria_ram": "3 GB",
+                    "armazenamento_interno": "32 GB"
+                },
+                {
+                    "modelo": "Xiaomi Mi 9T",
+                    "imagem":"https://http2.mlstatic.com/D_NQ_NP_612823-MLA46260165524_062021-O.webp",
+                    "ano_lancamento": 2019,
+                    "tela": "6.39 polegadas",
+                    "camera_principal": "48 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Xiaomi Redmi Note 9 Pro",
+                    "imagem":"https://http2.mlstatic.com/D_NQ_NP_666591-MLB71405403586_092023-O.webp",
+                    "ano_lancamento": 2020,
+                    "tela": "6.67 polegadas",
+                    "camera_principal": "64 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Xiaomi Mi Mix 3",
+                    "imagem":"https://http2.mlstatic.com/D_NQ_NP_619088-MLB29675562019_032019-O.jpg",
+                    "ano_lancamento": 2018,
+                    "tela": "6.39 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Xiaomi Mi A3",
+                    "imagem":"https://m.media-amazon.com/images/I/415CY6VIP+L._AC_SY300_SX300_.jpg",
+                    "ano_lancamento": 2019,
+                    "tela": "6.01 polegadas",
+                    "camera_principal": "48 MP",
+                    "memoria_ram": "4 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "Xiaomi Redmi Note 8",
+                    "imagem": "https://m.media-amazon.com/images/I/51VUBRqSFOL._AC_SX679_.jpg",
+                    "ano_lancamento": 2019,
+                    "tela": "6.3 polegadas",
+                    "camera_principal": "48 MP",
+                    "memoria_ram": "4 GB",
+                    "armazenamento_interno": "64 GB"
+                }
+            ],
+            "iPhone": [
+                {
+                    "modelo": "iPhone 13 Pro",
+                    "imagem" :"https://trocafone.vtexassets.com/arquivos/ids/249992-800-auto?v=638072275575300000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "6.1 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "iPhone 13 Mini",
+                    "imagem" :"https://trocafone.vtexassets.com/arquivos/ids/249932-800-auto?v=638072275383570000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "5.4 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "4 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "iPhone 12",
+                    "imagem":"https://trocafone.vtexassets.com/arquivos/ids/228390-800-auto?v=637872018476000000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2020,
+                    "tela": "6.1 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "4 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "iPhone SE (2020)",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/230215-800-auto?v=637872028274200000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2020,
+                    "tela": "4.7 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "3 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "iPhone 11 Pro Max",
+                    "imagem":"https://trocafone.vtexassets.com/arquivos/ids/227991-800-auto?v=637872017048170000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2019,
+                    "tela": "6.5 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "4 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "iPhone XR",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/230374-800-auto?v=637872028771470000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2018,
+                    "tela": "6.1 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "3 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "iPhone 8 Plus",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/230014-800-auto?v=637872027505100000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2017,
+                    "tela": "5.5 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "3 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "iPhone XS",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/264847-800-auto?v=638236573735470000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2018,
+                    "tela": "5.8 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "4 GB",
+                    "armazenamento_interno": "64 GB"
+                },
+                {
+                    "modelo": "iPhone 7",
+                    "imagem":"https://trocafone.vtexassets.com/arquivos/ids/229219-800-auto?v=637872023736370000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2016,
+                    "tela": "4.7 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "2 GB",
+                    "armazenamento_interno": "32 GB"
+                },
+                {
+                    "modelo": "iPhone 6S",
+                    "imagem" : "https://trocafone.vtexassets.com/arquivos/ids/228775-800-auto?v=637872022323900000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2015,
+                    "tela": "4.7 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "2 GB",
+                    "armazenamento_interno": "16 GB"
+                }
+            ],
+
+            "Samsung": [
+                {
+                    "modelo": "Samsung Galaxy S21 Ultra",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/270798-800-auto?v=638276431977970000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "6.8 polegadas",
+                    "camera_principal": "108 MP",
+                    "memoria_ram": "12 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy S21+",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/232784-800-auto?v=637872902240130000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "6.7 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "8 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy S20 FE",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/232292-800-auto?v=637872900301970000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2020,
+                    "tela": "6.5 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy Note 20 Ultra",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/259787-800-auto?v=638175083531570000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2020,
+                    "tela": "6.9 polegadas",
+                    "camera_principal": "108 MP",
+                    "memoria_ram": "12 GB",
+                    "armazenamento_interno": "256 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy Z Fold 3",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/244356-800-auto?v=638001453359430000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "7.6 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "12 GB",
+                    "armazenamento_interno": "256 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy A72",
+                    "imagem":"https://trocafone.vtexassets.com/arquivos/ids/235376-800-auto?v=637879852910030000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "6.7 polegadas",
+                    "camera_principal": "64 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy M51",
+                    "imagem":"https://trocafone.vtexassets.com/arquivos/ids/231289-800-auto?v=637872895917770000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2020,
+                    "tela": "6.7 polegadas",
+                    "camera_principal": "64 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy S10+",
+                    "imagem":"https://trocafone.vtexassets.com/arquivos/ids/232028-800-auto?v=637872899454800000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2019,
+                    "tela": "6.4 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "8 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy A52",
+                    "imagem": "https://trocafone.vtexassets.com/arquivos/ids/264014-800-auto?v=638227966193500000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2021,
+                    "tela": "6.5 polegadas",
+                    "camera_principal": "64 MP",
+                    "memoria_ram": "6 GB",
+                    "armazenamento_interno": "128 GB"
+                },
+                {
+                    "modelo": "Samsung Galaxy Note 10+",
+                    "imagem":"https://trocafone.vtexassets.com/arquivos/ids/231443-800-auto?v=637872896480630000&width=800&height=auto&aspect=true",
+                    "ano_lancamento": 2019,
+                    "tela": "6.8 polegadas",
+                    "camera_principal": "12 MP",
+                    "memoria_ram": "12 GB",
+                    "armazenamento_interno": "256 GB"
+                }
+            ]
         }
-    ]
-}
+

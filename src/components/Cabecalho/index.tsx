@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./Cabecalho.module.scss"
 import Formulario from "./Formulario"
 import {BsCartFill} from "react-icons/bs"
@@ -8,12 +9,12 @@ const Cabecalho = () => {
     <header className={styles.header}>
       <div className={styles.header_Container}>
 
-        <div>
+        <Link to="/">
           Logo
-        </div>
+        </Link>
 
         <div className={styles.header_Container_Interativo}>
-          <Formulario/>
+          {/* <Formulario/> */}
           <BsCartFill size={25}/>
         </div>
       </div>

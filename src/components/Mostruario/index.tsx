@@ -1,35 +1,44 @@
+import CardMostruario from "./CardMostruario"
 import styles from "./Mostruario.module.scss"
 
+
 const Mostruario = () => {
-  return (<section id="mostruario">
-    <div className={styles.container}>
-      <div className={styles.container_Mostruario}>
-        <div className={styles.container_Mostruario_Imagem}>
-          <img src="/assets/imagem6.jpg" alt="" />
-        </div>
-        <div className={styles.container_Mostruario_Botao}>
-          <p>Iphone</p>
-        </div>
-      </div>
+  const listaMostruario = [
+    {
+      nome: "iPhone",
+      imagem: {
+        url: "assets/imagem6.jpg",
+        descricao: "Imagem Iphone"
+      },
+      lado: "Esquerda"
+    },
+    {
+      nome: "Samsung",
+      imagem: {
+        url: "assets/imagem5.jpg",
+        descricao: "Imagem Samsung"
+      },
+      lado: "Direita"
+    },
+    {
+      nome: "Xiaomi",
+      imagem: {
+        url: "assets/imagem8.jpg",
+        descricao: "Imagem Xiaomi"
+      },
+      lado: "Esquerda"
+    },
+  ]
 
-      <div className={styles.container_Mostruario}>
-        <div className={styles.container_Mostruario_Botao}>
-          <p>Samsung</p>
-        </div>
-        <div className={styles.container_Mostruario_Imagem}><img src="/assets/imagem5.jpg" alt="" /></div>
-      </div>
+  return (
 
-      <div className={styles.container_Mostruario}>
-        <div className={styles.container_Mostruario_Imagem}><img src="/assets/imagem8.jpg" alt="" /></div>
-        <div className={styles.container_Mostruario_Botao}>
-          <p>Xiaomi</p>
-        </div>
-      </div>
+    <section className={styles.container}>
 
+      {listaMostruario.map(celular =>
+        <CardMostruario key={celular.nome} {...celular} />
+      )}
 
-
-    </div>
-  </section>
+    </section>
   )
 }
 export default Mostruario

@@ -1,7 +1,7 @@
 .formulario{
     width: 400px;
     display: flex;
- 
+  justify-content: end;
     align-items: center;
     gap: 10px;
 
@@ -19,6 +19,7 @@
 
     button {
         display: flex;
+       
         border: none;
         background: transparent;
         color: white;

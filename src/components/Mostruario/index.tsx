@@ -5,7 +5,7 @@ import styles from "./Mostruario.module.scss"
 const Mostruario = () => {
   const listaMostruario = [
     {
-      nome: "iPhone",
+      nome: "Apple",
       imagem: {
         url: "assets/imagem6.jpg",
         descricao: "Imagem Iphone"

@@ -1,0 +1,62 @@
+.cardVitrine {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  justify-content: space-between;
+  padding: 15px 10px;
+  max-width: 160px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  text-align: left;
+  transition: 0.5s ease-in-out;
+  text-decoration: none;
+
+
+  cursor: pointer;
+  h3{
+     color: #404040; 
+     text-align: center;
+  }
+  &:hover {
+      margin-top: -10px;
+  }
+
+  &_Preco {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      p {
+          
+          margin: 0;
+             color:#808080 ;
+             font-size: 12px;
+      }
+
+      
+      &_Valor{
+          p{
+           
+          }
+          span {
+              font-size: 24px;
+              font-weight: 600;
+              color: orangered;
+          }
+
+      }
+     
+
+     
+  }
+
+  &_Imagem {
+      img {
+          width: 100%;
+          object-fit: contain;
+      }
+  }
+}

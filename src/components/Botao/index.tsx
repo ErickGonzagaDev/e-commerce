@@ -2,7 +2,7 @@ import styles from "./Botao.module.scss"
 
 interface BotaoProps {
   children: string
-  onClick : ()=> void
+  onClick ?: ()=> void
 }
 
 const Botao = ({ children,onClick }: BotaoProps) => {

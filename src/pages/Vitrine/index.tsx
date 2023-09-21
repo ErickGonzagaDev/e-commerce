@@ -5,6 +5,8 @@ import marcas from "../../json/celulares.json"
 import styles from "./Vitrine.module.scss"
 import Botao from "../../components/Botao"
 import Formulario from "../../components/Formulario"
+import CardVitrine from "./CardVitrine"
+
 
 
 const Vitrine = () => {
@@ -27,24 +29,30 @@ const Vitrine = () => {
     else if (id === "Xiaomi") {
       setLista(marcas.Xiaomi)
     }
-    else if (id === "iPhone") {
+    else if (id === "Apple") {
       setLista(marcas.iPhone)
+    }
+
+    else {
+      navigate("*")
     }
 
 
 
-  }, [id])
+  }, [id, navigate])
+
 
 
 
   useEffect(() => {
+
     setVitrine(lista)
 
     if (procurar !== "") {
       setVitrine(prev => prev.filter(celular => celular.modelo.toLocaleLowerCase().includes(procurar.toLocaleLowerCase())))
     }
-  }, [lista, procurar])
 
+  }, [procurar,lista])
 
 
   return (
@@ -57,28 +65,7 @@ const Vitrine = () => {
 
         {
           vitrine.map((celular: ICelular) => (
-            <div key={celular.modelo} className={styles.cardVitrine}>
-              <div className={styles.cardVitrine_Imagem}>
-                <img src={celular.imagem} alt="" />
-              </div>
-              {/* <div className={styles.cardVitrine_Marca}><p> {id} </p></div> */}
-              <div className={styles.cardVitrine_Modelo}> <h3> {celular.modelo} </h3></div>
-
-              <div className={styles.cardVitrine_Preco}>
-                <div className={styles.cardVitrine_Preco_Valor}>
-
-                  <p>A partir de</p>
-                  <span>R$ {celular.preco}</span>
-                </div>
-
-                <div  className={styles.cardVitrine_Preco_Parcela}>
-                  <p>
-                    12x de R$ {(celular.preco / 12).toFixed(2)} sem juros ou no pix 10% off R$ {(celular.preco * 90) / 100}
-                  </p>
-                </div>
-
-              </div>
-            </div>
+            <CardVitrine  key={celular.modelo} celular={celular} id={id} />
           )
           )
         }

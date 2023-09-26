@@ -1,18 +1,22 @@
 import { ICelular } from "../interface/ICelular";
-import React, { createContext, useEffect, useState } from "react";
+import React, { SetStateAction, createContext, useEffect, useState } from "react";
 
 interface CarrinhoContextProps {
   addCarrinho: (value: ICelular) => void;
   excluirCarrinho: (value: ICelular) => void;
   listaCarrinho: ICelular[];
   total: number
+  setCarrinho : React.Dispatch<SetStateAction<boolean>>
+  carrinho:boolean
 }
 
 export const CarrinhoContext = createContext<CarrinhoContextProps>({
-  addCarrinho: () => {},
-  excluirCarrinho: () => {},
+  addCarrinho: () => { },
+  excluirCarrinho: () => { },
   listaCarrinho: [],
-  total:0
+  total: 0,
+  setCarrinho: () => {false},
+  carrinho: false
 });
 
 interface CarrinhoProviderProps {
@@ -22,6 +26,7 @@ interface CarrinhoProviderProps {
 export const CarrinhoProvider = ({ children }: CarrinhoProviderProps) => {
   const [listaCarrinho, setListaCarrinho] = useState<ICelular[]>([]);
   const [total,setTotal] = useState(0)
+  const [carrinho, setCarrinho] = useState(false)
 
   const addCarrinho = (celularAdd: ICelular) => {
     setListaCarrinho([...listaCarrinho, celularAdd]);
@@ -37,7 +42,7 @@ export const CarrinhoProvider = ({ children }: CarrinhoProviderProps) => {
   },[listaCarrinho])
 
   return (
-    <CarrinhoContext.Provider value={{ addCarrinho, listaCarrinho,excluirCarrinho,total }}>
+    <CarrinhoContext.Provider value={{ addCarrinho, listaCarrinho,excluirCarrinho,total,setCarrinho,carrinho }}>
       {children}
     </CarrinhoContext.Provider>
   );

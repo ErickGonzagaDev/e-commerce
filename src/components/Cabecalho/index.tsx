@@ -1,19 +1,14 @@
 import { Link } from "react-router-dom"
 import styles from "./Cabecalho.module.scss"
 import { BsCartFill } from "react-icons/bs"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { CarrinhoContext } from "../../contexts/CarrinhoContext"
-import CardCarrinho from "./CardCarrinho"
-import Botao from "../../components/Botao"
+
 
 
 const Cabecalho = () => {
-  const { listaCarrinho, total } = useContext(CarrinhoContext)
-  const [carrinho, setCarrinho] = useState(false)
+   const { listaCarrinho,setCarrinho,carrinho } = useContext(CarrinhoContext)
 
-  const comprou = () => {
-    console.log("comprou!!!")
-  }
 
   return (
     <header className={styles.header}>
@@ -28,17 +23,6 @@ const Cabecalho = () => {
         </div>
       </nav>
 
-      <div className={carrinho ? styles.carrinhoActive : styles.carrinho} >
-        <div onClick={() => setCarrinho(!carrinho)}>X</div>
-        <div className={styles.containerCards}>
-          {listaCarrinho.length === 0 && <div className={styles.containerCards_Vazio}>Carrinho Vazio</div> }
-         {listaCarrinho.map(celular => <CardCarrinho key={celular.modelo} {...celular} />)}
-        </div>
-        <div className={styles.containerCards_Botao}>
-          <span>Total: {total}</span>
-          <Botao funcao={comprou}>Comprar</Botao>
-        </div>
-      </div>
     </header>
   )
 }

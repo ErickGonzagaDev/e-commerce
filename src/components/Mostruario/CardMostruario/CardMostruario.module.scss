@@ -8,6 +8,7 @@
     font-size: 50px;
     text-decoration: none;
 
+
     &:hover {
         .card_Imagem {
             width: 0%;
@@ -33,5 +34,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 56px ;
     }
+}
+
+@media  screen and (max-width:768px)  {
+    .card_Botao{
+        font-size: 8vw;
+    }
+    
 }

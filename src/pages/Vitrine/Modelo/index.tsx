@@ -15,18 +15,27 @@ import { CarrinhoContext } from '../../../contexts/CarrinhoContext'
 
 const Modelo = () => {
   const [lista, setListaCelular] = useState<ICelular>()
-
+  
   const { id, name } = useParams()
-
+  
   const { addCarrinho, listaCarrinho } = useContext(CarrinhoContext)
+  
+  const navigate =useNavigate()
 
-
-
+  
+  
+  
   useEffect(() => {
+    
+    if(marcas[id].find((obj: ICelular) => obj.modelo === name)){
+      setListaCelular(marcas[id].find((obj: ICelular) => obj.modelo === name))
+    }else{
 
-    setListaCelular(marcas[id].find((obj: ICelular) => obj.modelo === name))
-
-  }, [id, lista, name])
+      navigate(`/*`)
+    }
+    
+  }, [id, lista, name, navigate])
+  
 
   const handleAddToCart = () => {
     if (lista) {
@@ -36,7 +45,6 @@ const Modelo = () => {
   }
 
 
-  const navigate =useNavigate()
   
   const voltar = () => {
     navigate(-1)

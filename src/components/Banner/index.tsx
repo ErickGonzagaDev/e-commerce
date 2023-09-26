@@ -11,7 +11,6 @@ const Banner = () => {
 
   return (
     <Swiper
-
       autoplay={{
         delay: 7000,
         disableOnInteraction: false,

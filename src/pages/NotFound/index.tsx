@@ -10,7 +10,7 @@ const NotFound = () => {
   }
   return (
     <div className={styles.container}>
-      <h1> 404 - Página não encontrada</h1>
+      <h1>404 - Página não encontrada</h1>
       <Botao funcao={voltar}>Voltar</Botao>
     </div>
   )

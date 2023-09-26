@@ -25,12 +25,13 @@ const Vitrine = () => {
   useEffect(() => {
     if (id) {
       setLista(marcas[id])
+      
+          if(lista===undefined){
+            navigate("/*")
+          }
     }
 
-    else {
-      navigate("*")
-    }
-  }, [id, navigate])
+  }, [id, lista, navigate])
 
 
 

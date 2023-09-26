@@ -13,8 +13,8 @@ const CardBanner = (celular: ICelular) => {
 
 
   return (
-    <div onClick={()=> excluirCarrinho(celular)} className={styles.container}>
-      <div className={styles.container_Lixo}><BsTrash size={16}/></div>
+    <div  className={styles.container}>
+      <div onClick={()=> excluirCarrinho(celular)} className={styles.container_Lixo}><BsTrash size={16}/></div>
       <img src={celular.imagem} width={60} alt="" />
       <div>
         <p>

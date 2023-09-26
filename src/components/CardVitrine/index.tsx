@@ -11,7 +11,7 @@ interface CardVitrineProps {
 const CardVitrine = ({celular,id}:CardVitrineProps) =>{
 
   return(
-    <Link to={`/modelo/${id}/${celular.modelo}`} className={styles.cardVitrine}>
+    <Link to={`/vitrine/modelo/${id}/${celular.modelo}`} className={styles.cardVitrine}>
               <div className={styles.cardVitrine_Imagem}>
                 <img src={celular.imagem} alt="" />
               </div>

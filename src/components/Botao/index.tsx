@@ -1,13 +1,14 @@
+
 import styles from "./Botao.module.scss"
 
 interface BotaoProps {
   children: string
-  onClick ?: ()=> void
+  funcao : () => void
 }
 
-const Botao = ({ children,onClick }: BotaoProps) => {
+const Botao = ({ children,funcao }: BotaoProps) => {
   return (
-    <button onClick={onClick} className={styles.botao}>{children}</button>
+    <button onClick={() => {funcao()}} className={styles.botao}>{children}</button>
   )
 }
 export default Botao

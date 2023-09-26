@@ -5,7 +5,7 @@ import marcas from "../../json/celulares.json"
 import styles from "./Vitrine.module.scss"
 import Botao from "../../components/Botao"
 import Formulario from "../../components/Formulario"
-import CardVitrine from "./CardVitrine"
+import CardVitrine from "../../components/CardVitrine"
 
 
 
@@ -23,22 +23,13 @@ const Vitrine = () => {
   }
 
   useEffect(() => {
-    if (id === "Samsung") {
-      setLista(marcas.Samsung)
-    }
-    else if (id === "Xiaomi") {
-      setLista(marcas.Xiaomi)
-    }
-    else if (id === "Apple") {
-      setLista(marcas.iPhone)
+    if (id) {
+      setLista(marcas[id])
     }
 
     else {
       navigate("*")
     }
-
-
-
   }, [id, navigate])
 
 
@@ -52,20 +43,21 @@ const Vitrine = () => {
       setVitrine(prev => prev.filter(celular => celular.modelo.toLocaleLowerCase().includes(procurar.toLocaleLowerCase())))
     }
 
-  }, [procurar,lista])
+  }, [procurar, lista])
 
 
   return (
+
     <div className={styles.vitrine}>
       <div className={styles.vitrine_nav}>
-        <Botao onClick={voltar}> Voltar</Botao>
+        <Botao funcao={voltar}> Voltar</Botao>
         <Formulario setProcurar={setProcurar} />
       </div>
       <div className={styles.vitrine_container}>
 
         {
           vitrine.map((celular: ICelular) => (
-            <CardVitrine  key={celular.modelo} celular={celular} id={id} />
+            <CardVitrine key={celular.modelo} celular={celular} id={id} />
           )
           )
         }

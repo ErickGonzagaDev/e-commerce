@@ -13,6 +13,8 @@
         width: 100%;
     }
 
+
+
     &_Modelo {
         &::-webkit-scrollbar {
             background-color: transparent;
@@ -43,7 +45,6 @@
     }
 
     &_Preco {
-        
         border-left: 1px solid #bbbbbb;
         display: flex;
         flex-direction: column;
@@ -84,3 +85,28 @@
         }
     }
 }
+
+.botao{
+    width: 80%;
+    margin: 20px auto;
+ }
+
+ @media screen and (max-width:768px){
+    .botao{
+      display: flex;
+      justify-content: center;
+    }
+
+    .container{
+        flex-direction: column;
+        max-height: 100%;
+        align-items: center;
+        &_Preco{
+            border-left: none;
+        }
+    }
+
+    
+
+
+ }

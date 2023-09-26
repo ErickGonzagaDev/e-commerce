@@ -1,7 +1,6 @@
-import Botao from '../Botao'
 import styles from './Banner.module.scss'
 import { Swiper, SwiperSlide } from "swiper/react"
-import { EffectFade,Autoplay } from 'swiper/modules';
+import { EffectFade, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
@@ -13,25 +12,27 @@ const Banner = () => {
   return (
     <Swiper
 
-    autoplay={{
-      delay: 7000,
-      disableOnInteraction: false,
-    }}
-    speed={2000}
-    loop={true}
-    slidesPerView={1}
-    effect={'fade'}
-    scrollbar={{hide: true}}
-      modules={
-        [EffectFade, Autoplay]}
-      className={styles.banner} 
+      autoplay={{
+        delay: 7000,
+        disableOnInteraction: false,
+      }}
+      speed={2000}
+      loop={true}
+      slidesPerView={1}
+      effect={'fade'}
+      scrollbar={{ hide: true }}
+      modules={[EffectFade, Autoplay]}
+      className={styles.banner}
     >
 
       <SwiperSlide>
-        <img src="assets/imagem6.jpg" alt="" />
+        <img src="assets/imagem6.jpg" alt="iPhone" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="assets/imagem5.jpg" alt="" />
+        <img src="assets/imagem5.jpg" alt="Samsung" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="assets/imagem8.jpg" alt="Xiaomi" />
       </SwiperSlide>
     </Swiper>
 

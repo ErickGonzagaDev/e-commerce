@@ -1,28 +1,43 @@
 .formulario{
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     display: flex;
   justify-content: end;
     align-items: center;
     gap: 10px;
 
 
-    input {
-        max-width: 250px;
-        width: 100%;
-        padding: 5px 10px;
-        outline: none;
-        border: none;
-        border-radius: 6px;
-        background-color: white;
-        font-size: 16px;
+  
+
+        input {
+            max-width: 250px;
+            width: 100%;
+            padding: 5px 10px;
+            outline: none;
+            border: none;
+            border: 1px solid #333333;
+            border-radius: 6px;
+            background-color: white;
+            font-size: 16px;
+        }
+
+        button {
+            display: flex;
+            background: transparent;
+            border: none;
+            color: #333333;
+            cursor: pointer;
+        }
     }
 
-    button {
-        display: flex;
-       
-        border: none;
-        background: transparent;
-        color: white;
-        cursor: pointer;
-    }
+
+
+@media screen and (max-width: 640px) {
+
+   .formulario{
+    display: flex;
+ input{
+   width: 100%;
+ }
+   }
 }
